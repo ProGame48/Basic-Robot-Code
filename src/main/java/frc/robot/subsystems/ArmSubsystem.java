@@ -6,7 +6,7 @@ import com.revrobotics.CANSparkMaxLowLevel.MotorType; //Motortype import
 import frc.robot.Constants.PortConstants;//Constants import (Ports are in there)
 
 public class ArmSubsystem extends SubsystemBase{
-    private final CANSparkMax Arm_Motor_1; //Initiate the two arm motors, they exist now
+    private final CANSparkMax Arm_Motor_1; //Initialize the two arm motors, they exist now
     private final CANSparkMax Arm_Motor_2;
     //Constructor sets the ports
     public ArmSubsystem(){
@@ -24,7 +24,7 @@ public class ArmSubsystem extends SubsystemBase{
         this.Arm_Motor_1.set(speed);
         this.Arm_Motor_1.set(speed);
     }
-    public void stopMotors(){
+    public void stopAllMotors(){
         this.Arm_Motor_1.set(0);
         this.Arm_Motor_2.set(0);
     }
