@@ -16,5 +16,10 @@ package frc.robot;
 public final class Constants {
 	public static class OperatorConstants {
 		public static final int DRIVER_CONTROLLER_PORT = 0;
+		//Motor Ports
+		public static final int Arm_Motor_1_Port = 1;
+		public static final int Arm_Motor_2_Port = 2;
+		//Set Speed (for both), ONLY ONE VALUE, I AIN'T TAKING TOO MUCH TIME
+		public static final double SPEED = 0.2; //I capitalized the constant, do not confuse with parameter "speed"
 	}
 }
