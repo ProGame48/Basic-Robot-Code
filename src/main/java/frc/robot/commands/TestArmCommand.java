@@ -14,13 +14,13 @@ public class TestArmCommand extends CommandBase{
     @Override
     public void initialize() {
         System.out.println("Begin test arm command");
-        int ticks = 0;
+        this.ticks = 0;
     }
     @Override
     public void execute(){
         ticks++;
-        arm.armMotor1speed(Math.cos(ticks));
-        arm.armMotor2speed(Math.sin(ticks));
+        arm.setArmMotor1Speed(Math.cos(ticks));
+        arm.setArmMotor2speed(Math.sin(ticks));
     }
     @Override
     public boolean isFinished(){
@@ -28,6 +28,6 @@ public class TestArmCommand extends CommandBase{
     }
     @Override
     public void end(boolean interrupted){
-        arm.armMotorsSpeed(0);
+        arm.setArmMotorsSpeed(0);
     }
 }

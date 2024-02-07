@@ -14,13 +14,13 @@ public class ArmSubsystem extends SubsystemBase{
         this.Arm_Motor_2 = new CANSparkMax(PortConstants.Arm_Motor_2_Port, MotorType.kBrushless); 
     }
     //set the speeds, HOMEWORK STATED: 1 method sets motor 1, one method sets 2, one method sets both. I know its repetitive
-    public void armMotor1speed(double speed){
+    public void setArmMotor1Speed(double speed){
         this.Arm_Motor_1.set(speed); //Don't worry about the set() method, it comes with the library
     }
-    public void armMotor2speed(double speed){
+    public void setArmMotor2speed(double speed){
         this.Arm_Motor_2.set(speed);
     }
-    public void armMotorsSpeed(double speed){
+    public void setArmMotorsSpeed(double speed){
         this.Arm_Motor_1.set(speed);
         this.Arm_Motor_1.set(speed);
     }
